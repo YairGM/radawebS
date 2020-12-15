@@ -116,7 +116,7 @@ $(document).ready(function() {
         if (result.value) {
             let fila = $('#tablaProductos').dataTable().fnGetData($(this).closest('tr'));            
             let id = fila[0];            
-            db.ref(`productos/${id}`).remove()
+            db.ref(`Salidaproductos/${id}`).remove()
             Swal.fire('¡Eliminado!', 'El producto ha sido eliminado.','success')
         }
         })        
